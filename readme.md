@@ -1,6 +1,7 @@
 ### Prism Syntax Highlighter Plugin For WordPress
 
 Original library developed by - [Lea Verou](https://github.com/PrismJS/prism)
+
 Original Plugin developed by - [ankurk91](https://github.com/ankurk91/wp-prism-js)
 
 ### Description
