@@ -1,7 +1,7 @@
 pre[class*='language-'] {
 	position: relative;
 }
-pre[class*='language-'][data-language]::before {
+/*pre[class*='language-'][data-language]::before {
 	content: attr(data-language);
 	color: black;
 	background-color: #CFCFCF;
@@ -12,5 +12,21 @@ pre[class*='language-'][data-language]::before {
 	font-size: 0.9em;
 	border-radius: 0 0 0 5px;
 	padding: 0 0.5em;
+	text-shadow: none;
+}*/
+pre[class*='language-'][data-language]::before {
+	content: attr(data-language);
+	color: white;
+	background-color: #1f4662;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	text-align: right;
+	width: 100%;
+	right: 0;
+	letter-spacing: 1px;
+	font-size: 12px;
+	border-top: 2px solid #ffc600;
+	padding: 5px 18px 5px 5px;
 	text-shadow: none;
 }

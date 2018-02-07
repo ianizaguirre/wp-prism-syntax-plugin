@@ -35,3 +35,15 @@ Make a new array item, for example:
 `7 => array('name' => 'Cobalt2WesBos', 'url' => $baseUrl . 'prism-cobalt2wesbos', 'file' => 'prism-cobalt2wesbos'),`
 
 Save, and thats it. Your new color scheme should now appear as a plugin setting option.
+
+---
+
+## Updated a few plugin css files
+
+### Path 1
+
+Path: plugins / prism-show-language.css
+
+### Path 2
+
+Path: plugins / prism-copy-to-clipboard.css
