@@ -17,28 +17,31 @@ This WP plugin lets you control and use this awesome library in to your WordPres
 
 # Changes Made
 
+## Color Scheme - Added Cobalt2
+
 * I added my own theme based on WesBos Cobalt2 Color Scheme
 
-## How it was done
+### How it was done
 
-(1) Go to:
-lib / themes
+(1) File Path: _lib / themes_
 
-* now drag and drop a new css theme.
+* Now drag and drop a new CSS theme.
 
-(2) Go to:
-inc / class-util.php
+(2) File Path: _inc / class-util.php_
 
-* on line 23, you should see `$list = array`
+* Around line 23, you should see `$list = array`
 
-Make a new array item, for example:
+* Now create a new array item, for example:
+
 `7 => array('name' => 'Cobalt2WesBos', 'url' => $baseUrl . 'prism-cobalt2wesbos', 'file' => 'prism-cobalt2wesbos'),`
 
-Save, and thats it. Your new color scheme should now appear as a plugin setting option.
+Save your changes, and thats it. Your new color scheme should now appear as a Plugin setting option.
 
 ---
 
-## Updated a few plugin css files
+## Updated a few Plugin CSS files
+
+I Changed these CSS files to better match the new Cobalt2 Color Scheme
 
 ### Path 1
 
@@ -47,3 +50,29 @@ Path: plugins / prism-show-language.css
 ### Path 2
 
 Path: plugins / prism-copy-to-clipboard.css
+
+---
+
+## Added New Plugin
+
+The current version of this WordPress plugin lacks some newly added features/plugins that the non-WordPress Prism Git Repository has added recently.
+
+### Added - Unescaped Markup Plugin
+
+Date: 2-8-18
+
+I added the Unescaped markup plugin
+
+(1) Path: lib / plugins
+
+* I added the unescaped-markup **[min.js file & .css file](https://github.com/PrismJS/prism/tree/gh-pages/plugins/unescaped-markup)** from the Prism repository, to the "plugins" folder.
+
+(2) Path: inc / class-util.php
+
+* Around line 42, you should see `$list = array`
+
+* After list item "16", add:
+
+`17 => array('name' => 'Unescaped Markup', 'url' => $baseUrl . 'unescaped-markup/', 'file' => 'prism-unescaped-markup', 'need_css' => 1),`
+
+Save your changes, and thats it. The Unescaped markup plugin should now appear as a Plugin option, under the "Select plugins" section.

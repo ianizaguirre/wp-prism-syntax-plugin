@@ -3,9 +3,10 @@
  */
 
 /* ======== */
-pre {
+/*pre {
     max-height: 30em !important;
-}
+    overflow: ????;
+}*/
 /* ======== */
 
 code[class*='language-'],

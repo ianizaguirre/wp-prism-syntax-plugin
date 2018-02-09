@@ -62,6 +62,8 @@ class Util
             // Docs not correctly linking
             // 16 => array('name' => 'WebPlatform Docs', 'url' => $base_url . 'wpd/', 'file' => 'prism-wpd', 'need_css' => 1),
             16 => array('name' => 'Normalize Whitespace', 'url' => $baseUrl . 'normalize-whitespace/', 'file' => 'prism-normalize-whitespace', 'need_css' => 0),
+
+            17 => array('name' => 'Unescaped Markup', 'url' => $baseUrl . 'unescaped-markup/', 'file' => 'prism-unescaped-markup', 'need_css' => 1),
         );
         return $list;
     }
